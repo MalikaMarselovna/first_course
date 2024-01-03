@@ -129,7 +129,7 @@ textarea {
     line-height: 150%;
 }
 .main{
-    background: url(./img/main.jpg) center no-repeat;
+    background: url(/img/main.jpg) center no-repeat;
     width: 100%;
 
 }
