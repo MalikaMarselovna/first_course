@@ -103,7 +103,7 @@ textarea {
 }
 
 .menu__box li a {
-    color: var(--white, #FFF);
+    color: var(--white, #131111);
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -129,7 +129,5 @@ textarea {
     line-height: 150%;
 }
 .main{
-    background: url(main.jpg) center no-repeat;
-    width: 100%;
-
+   
 }
