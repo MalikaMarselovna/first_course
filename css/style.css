@@ -9,6 +9,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 .clearfix::after {
     clear: both;
     content: "";
@@ -85,4 +86,44 @@ textarea {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+
+
+.menu__box {
+    padding: 20px 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+
+}
+
+.menu__box li a {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+
+
+}
+
+.menu__box li a:hover {
+    color: #000
+}
+
+.btn {
+    display: inline-flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: var(--grad2, linear-gradient(94deg, #C89AFC 9.51%, #7C6AFA 90.23%));
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
 }
