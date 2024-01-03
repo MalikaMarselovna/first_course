@@ -148,12 +148,12 @@ textarea {
 }
 .main_in{
     width: 60%;
-   
 }
 .main_tit {
-    margin-top: 270px;
+    margin-top: 200px;
     color: var(--white, #fff);
-    font-size: 64px;
+    font-size: 44px;
     font-weight: 700;
     line-height: 140%;
+    margin-left: 120px;
 }
