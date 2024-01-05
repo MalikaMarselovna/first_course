@@ -44,19 +44,19 @@
             <div class="main_bottom">
                 <div class="main_cards flex">
                     <div class="main_card">
-                        <h3 class="main_num">18</h3>
+                        <h3 id="days">00</h3>
                         <p class="main_txt">Дней</p>
                     </div>
                     <div class="main_card">
-                        <h3 class="main_num">18</h3>
+                        <h3 id="hours">00</h3>
                         <p class="main_txt"> Часов</p>
                     </div>
                     <div class="main_card">
-                        <h3 class="main_num">18</h3>
+                        <h3 id="minutes">00</h3>
                         <p class="main_txt">Минут</p>
                     </div>
                     <div class="main_card">
-                        <h3 class="main_num">18</h3>
+                        <h3 id="seconds">00</h3>
                         <p class="main_txt"> Секунд</p>
                     </div>
                 </div>
@@ -64,6 +64,48 @@
         </div>
 
     </section>
+    <div class="order-course">
+        <div class="container">
+            <button class="btn btn_red">Заказать курс</button>
+            <table class="order-course__students-table flex">
+                <tbody>
+                    <tr class="order-course__students-row">
+                        <td class="order-course__students-description-td">
+                            <span class="students">Учеников всего:</span>
+                        </td>
+                        <td class="order-course__students-td-count">
+                            <span class="students_num">200</span></td>
+                    </tr>
+                    <tr class="order-course__students-row">
+                        <td class="order-course__students-description-td">
+                            <span class="students">Успешно закончили курс:<span></td>
+                        <td class="order-course__students-td-count">
+                            <span class="students_num">190</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="order-course__earned flex">
+                <table class="order-course__students-table">
+                    <tbody>
+                        <tr class="order-course__students-row">
+                            <td class="order-course__students-description-td">
+                                <span class="students">Заработано
+                                    учениками:</span></td>
+                            <td class="order-course__students-td-count">
+                                <span class="students_num">400 000₽</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="order-course__earned-progress-bar ">
+                    <span class="students">0</span>
+                    <span class="students">1 000 000₽</span></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="core.js"></script>
 
 
 </body>

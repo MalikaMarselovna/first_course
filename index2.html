@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main_cards {
+            gap: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main_card {
+            display: inline-flex;
+            padding: 14px 23px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #121212;
+            margin-top: 38px;
+        }
+
+        .main_num {
+            color: var(--white, #FFF);
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 140%;
+        }
+
+        .main_txt {
+            color: var(--white, #FFF);
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 140%;
+        }
+    </style>
+    <title>Countdown Timer</title>
+</head>
+
+<body>
+    <div class="main_bottom">
+        <div class="main_cards flex">
+            <div class="main_card">
+                <h3 class="main_num" id="days">18</h3>
+                <p class="main_txt">Дней</p>
+            </div>
+            <div class="main_card">
+                <h3 class="main_num" id="hours">18</h3>
+                <p class="main_txt">Часов</p>
+            </div>
+            <div class="main_card">
+                <h3 class="main_num" id="minutes">18</h3>
+                <p class="main_txt">Минут</p>
+            </div>
+            <div class="main_card">
+                <h3 class="main_num" id="seconds">18</h3>
+                <p class="main_txt">Секунд</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Установите дату окончания обратного отсчета (замените эту дату своей)
+        const countDownDate = new Date("Mar 3, 2023 23:59:00").getTime();
+
+        // Обновите отсчет каждую секунду
+        const x = setInterval(function () {
+            // Получите текущую дату и время
+            const now = new Date().getTime();
+
+            // Разница между текущим временем и датой окончания обратного отсчета
+            const distance = countDownDate - now;
+
+            // Расчет дней, часов, минут и секунд
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Обновление элементов на странице с новыми значениями
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // Если обратный отсчет закончен, выведите сообщение
+            if (distance < 0) {
+                clearInterval(x);
+                // Замените этот текст своим сообщением
+                document.getElementById("days").innerHTML = "EXPIRED";
+                document.getElementById("hours").innerHTML = "EXPIRED";
+                document.getElementById("minutes").innerHTML = "EXPIRED";
+                document.getElementById("seconds").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
