@@ -446,3 +446,14 @@ textarea {
     height: 8px;
 }
 /*advantages*/
+.advantages{
+    margin-top: 180px;
+}
+.advan_tit{
+    color: var(--white, #FFF);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 140%;
+    margin-bottom: 37px;
+    text-align: center;
+}
