@@ -388,3 +388,32 @@ textarea {
     font-weight: 700;
     line-height: 140%;
 }
+
+.sc_txt {
+    width: 306px;
+    color: var(--white, #FFF);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.5;
+}
+.sc_graph{
+    width: 324px;
+    background: var(--grad2, linear-gradient(94deg, #C89AFC 9.51%, #7C6AFA 90.23%));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sc_graph1 {
+    height: 80px;
+}
+
+.sc_graph2 {
+    height: 60px;
+}
+.sc_graph3 {
+    height: 30px;
+}
+.sc_graph4{
+    height: 10px;
+}
