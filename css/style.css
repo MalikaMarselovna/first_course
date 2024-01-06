@@ -212,7 +212,8 @@ textarea {
 /*course*/
 
 .order-course {
-    margin-top: -60px;
+    margin-top: -40px;
+    position: absolute;
     width: 100%;
     color: rgba(255, 255, 255, .4);
     background-color: #121212;
@@ -224,11 +225,9 @@ textarea {
 .btn_red {
     background: var(--grad1, linear-gradient(95deg, #DF5950 11.19%, #451046 93.72%));
     width: 122px;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-}
+    margin-top:60px;
 
+}
 .students {
     color: var(--white, #FFF);
     font-size: 10px;
