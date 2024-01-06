@@ -314,9 +314,11 @@ textarea {
     height: 359px;
     border: 23px solid var(--grad2, #C89AFC);
 }
-.about_left img{
+
+.about_left img {
     padding: 46px 10px 0;
 }
+
 .about_right {
     width: 50%;
     margin-top: 196px;
@@ -329,7 +331,7 @@ textarea {
     font-weight: 700;
     line-height: 140%;
     margin-bottom: 30px;
-    
+
 }
 
 .about_txt {
@@ -338,4 +340,37 @@ textarea {
     font-size: 12px;
     font-weight: 400;
     line-height: 170%;
+}
+
+/*start*/
+.start {
+    margin-top: 180px;
+}
+
+.start_logo__tit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo2 {
+    width: 90px;
+    height: 90px;
+}
+
+.start_tit {
+    color: var(--white, #FFF);
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 140%;
+    margin-bottom: 45px;
+}
+
+.start_txt {
+    max-width: 411px;
+    color: var(--white, #FFF);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.5;
 }
