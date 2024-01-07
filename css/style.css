@@ -518,7 +518,7 @@ textarea {
 
 .advan_card__txt {
     max-width: 268px;
-    color: var(--white, #FFF);
+    color: rgba(255, 255, 255, .5);
     text-align: center;
     font-size: 12px;
     font-weight: 400;
