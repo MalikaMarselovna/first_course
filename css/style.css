@@ -467,6 +467,9 @@ textarea {
     text-align: center;
     margin-bottom: 80px;
 }
+.advan_card{
+    margin-left: 62px;
+}
 .advan_card__tit {
     max-width: 250px;
     color: var(--white, #FFF);
@@ -484,7 +487,6 @@ textarea {
     font-size: 12px;
     font-weight: 400;
     line-height: 160%;
-    opacity: 0.8;
 }
 
 .advan_icon {
@@ -492,7 +494,7 @@ textarea {
     height: 75px;
     background-size: cover;
     margin-bottom: 40px;
-
+    margin-left: 90px;
     margin-top: 10px;
 }
 .icon1{
