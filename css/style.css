@@ -628,6 +628,7 @@ textarea {
     line-height: 160%;
     opacity: 0.5;
 }
+
 .program_weeks {
     position: relative;
     z-index: 1;
@@ -642,6 +643,7 @@ textarea {
     padding: 10px 0;
     margin-top: 60px;
 }
+
 .program_weeks::before {
     position: absolute;
     top: 0;
@@ -719,4 +721,16 @@ textarea {
     font-size: 12px;
     font-weight: 400;
     line-height: 160%;
+}
+
+/*mentors*/
+.mentors {
+    padding: 155px 0;
+}
+
+.mentor_icon {
+    width: 190px;
+    height: 190px;
+    border-radius: 190px;
+
 }
