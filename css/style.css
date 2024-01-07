@@ -344,7 +344,7 @@ textarea {
 
 /*start*/
 .start {
-    margin-top: 200px;
+    margin-top: 205px;
 }
 
 .start_main {
@@ -364,7 +364,7 @@ textarea {
 }
 
 .start_tit {
-    padding-left: 15px;
+    padding-left: 110px;
     color: var(--white, #FFF);
     font-size: 35px;
     font-weight: 700;
@@ -374,11 +374,9 @@ textarea {
 }
 
 .start_tit::before {
-    padding-left: 30px;
     margin-top: -40px;
     position: absolute;
-    top: 0;
-    left: -147px;
+    left: -25px;
     width: 127px;
     height: 127px;
     content: "";
@@ -457,7 +455,7 @@ textarea {
 
 /*advantages*/
 .advantages {
-    margin-top: 180px;
+    margin-top: 135px;
 }
 
 .advan_tit {
@@ -467,23 +465,44 @@ textarea {
     line-height: 140%;
     margin-bottom: 37px;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .advan_card__tit {
+    max-width: 250px;
     color: var(--white, #FFF);
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 140%;
+    margin-bottom: 20px;
 }
-.advan_card__txt{
-    width: 358px;
 
+.advan_card__txt {
+    max-width: 278px;
     color: var(--white, #FFF);
     text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 160%; 
+    line-height: 160%;
     opacity: 0.8;
 }
+
+.advan_icon {
+    width: 75px;
+    height: 75px;
+    background-position:  center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.icon1{
+    background-image: url(/img/advan1.png) ;
+}
+.icon2{
+    background-image: url(/img/advan2.png) ;
+}
+.icon3{
+    background-image: url(/img/advan3.png) ;
+}
+
+
