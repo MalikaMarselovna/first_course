@@ -727,10 +727,37 @@ textarea {
 .mentors {
     padding: 155px 0;
 }
-
+.ment{
+    margin-bottom: 85px;
+}
+.ment_tit{
+    margin-bottom: 10px;
+}
+.ment_txt{
+    margin-bottom: 20px;
+}
+.mentor_card{
+    margin-left: 75px;
+    margin-right: 75px;
+}
 .mentor_icon {
-    width: 190px;
-    height: 190px;
+    width: 140px;
+    height: 140px;
     border-radius: 190px;
-
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.micon1{
+    background-image: url(/img/mentor1.png);
+}
+.micon2{
+    background-image: url(/img/mentor2.png);
+}
+.micon3{
+    background-image: url(/img/mentor3.png);
+}
+.btn_white{
+    background: none;
+    border: 1px solid #fff;
+    margin-left: 25px;
 }
