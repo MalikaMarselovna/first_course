@@ -310,7 +310,6 @@ textarea {
     -ms-flex-pack: justify;
     justify-content: space-between
 }
-
 .order-course__earned::after {
     position: absolute;
     top: 32px;
