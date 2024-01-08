@@ -564,7 +564,6 @@ textarea {
     grid-template-columns: repeat(4, 5fr);
     overflow: hidden
 }
-
 .partners__item {
     width: 102%;
     height: 130px;
