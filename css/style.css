@@ -461,7 +461,6 @@ textarea {
     line-height: 160%;
     opacity: 0.5;
 }
-
 .sc_graph {
     width: 235px;
     background: var(--grad2, linear-gradient(94deg, #C89AFC 9.51%, #7C6AFA 90.23%));
