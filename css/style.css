@@ -578,6 +578,7 @@ textarea {
 }
 
 /*program*/
+
 .prog_tit::before {
     margin-top: -120px;
     position: absolute;
