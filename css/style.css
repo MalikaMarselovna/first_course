@@ -112,7 +112,7 @@ textarea {
     margin-top: 10px;
     align-items: center;
     width: 100%;
-    background: none;
+    background-color:rgba(18,18,18,.8);
     position: relative;
     z-index: 99 !important;
 }
