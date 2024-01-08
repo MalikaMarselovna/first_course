@@ -876,11 +876,9 @@ footer {
 .facebook {
     background-image: url(/img/facebook.png);
 }
-
 .inst {
     background-image: url(/img/instagram.png);
 }
-
 .footer_template {
     color: rgba(255, 255, 255, .8);
     text-align: center;
