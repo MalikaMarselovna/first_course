@@ -11,8 +11,8 @@
         width: 30.6%;
         margin-left: 320px;
     }
-    body{
-        
+    .btn_red{
+        margin: 5px;
     }
 }
 
@@ -226,6 +226,9 @@
         content: "";
         background-image: url(/img/icon-heading.png);
         animation: zoomInOut 5s infinite;
+    }
+    .btn_white{
+        margin-left: 50px;
     }
 
     .subscribe_form {
