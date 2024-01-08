@@ -851,7 +851,6 @@ footer {
     background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
     border-radius: 100%;
 }
-
 .footer_media-item:not(:last-child) {
     margin-right: 20px;
 }
