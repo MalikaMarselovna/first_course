@@ -686,7 +686,6 @@ textarea {
     content: "";
     background-color: #fff
 }
-
 .program_week:nth-child(even) {
     -webkit-box-align: start;
     -ms-flex-align: start;
