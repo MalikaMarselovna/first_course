@@ -404,7 +404,6 @@ textarea {
     margin-bottom: 37px;
     position: relative;
 }
-
 .start_tit::before {
     margin-top: -40px;
     position: absolute;
