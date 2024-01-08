@@ -7,12 +7,20 @@
         margin: 0 76px 0 100px;
 
     }
+    .subscribe_form {
+        width: 30.6%;
+        margin-left: 320px;
+    }
+    body{
+        
+    }
 }
 
 @media screen and (max-width: 990px) {
     .container {
         max-width: 750px;
-    }    
+    }
+
     .mentor_card {
         margin-left: 75px;
         margin-right: 75px;
@@ -23,6 +31,7 @@
         border: 1px solid #fff;
         margin-left: 0px;
     }
+
     .partners__items {
         -ms-grid-rows: (146px)[];
         grid-template-rows: repeat(3, 146px);
@@ -31,6 +40,7 @@
         margin-left: 60px;
         margin-right: 60px;
     }
+
     .partners__item {
         display: inline-block;
         width: 102%;
@@ -168,6 +178,10 @@
         margin-top: 186px;
         padding-left: 50px;
     }
+    .subscribe_form {
+        width: 40.6%;
+        margin-left: 200px;
+    }
 
 }
 
@@ -186,9 +200,6 @@
     }
 
     .start_main {
-        margin-left: 0px;
-    }
-    .subscribe_form {
         margin-left: 0px;
     }
 }
@@ -215,6 +226,24 @@
         content: "";
         background-image: url(/img/icon-heading.png);
         animation: zoomInOut 5s infinite;
+    }
+
+    .subscribe_form {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 60.6%;
+        margin-left: 80px;
+    }
+
+    .subscribe_email-input {
+        height: 32px;
+        padding: 10px 0 10px 20px;
+        color: #fff;
+        background-color: rgba(255, 255, 255, .25);
+        border-radius: 50px;
+        font-size: 12px;
     }
 }
 
@@ -246,6 +275,7 @@
     .btn {
         margin-left: 450px;
     }
+
 }
 
 @media screen and (max-width: 680px) {
@@ -435,5 +465,5 @@
         margin-right: 0px;
     }
 
-   
+
 }
