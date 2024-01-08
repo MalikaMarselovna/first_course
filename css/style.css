@@ -666,7 +666,6 @@ textarea {
     flex-direction: column;
     width: 50%
 }
-
 .program_week:nth-child(odd) {
     -webkit-box-align: end;
     -ms-flex-align: end;
