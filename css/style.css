@@ -248,11 +248,15 @@ textarea {
 .btn_red {
     background: -o-linear-gradient(355.22deg, #df5950 11.19%, #451046 93.72%);
     background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+    width: 125px;
 }
 
 .order-course {
-    padding: 43px 190px;
+    margin-top: -45px;
+    padding: 30px 200px;
     background: #121212;
+    display: inline-flex;
+    width: 100%;
 }
 
 .student-infos {
@@ -265,7 +269,7 @@ textarea {
 
 .student_num {
     color: var(--white, #FFF);
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     line-height: 150%;
 }
@@ -668,7 +672,7 @@ textarea {
 /*mentors*/
 
 .mentors {
-    padding: 155px 0;
+    padding: 105px 0;
 }
 
 .ment {
@@ -677,15 +681,18 @@ textarea {
 
 .ment_tit {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .ment_txt {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .mentor_card {
     margin-left: 75px;
     margin-right: 75px;
+    margin-top: 50px;
 }
 
 .mentor_icon {
@@ -694,6 +701,7 @@ textarea {
     border-radius: 190px;
     background-size: cover;
     margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 .micon1 {
@@ -711,8 +719,26 @@ textarea {
 .btn_white {
     background: none;
     border: 1px solid #fff;
-    margin-left: 25px;
+    padding: 9px 20px;
+    gap: 10px;
+    border-radius: 50px;
+    color: var(--white, #FFF);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    cursor: pointer;
+    transition: 1s;
+    width: 132px;
+    margin-left: 30px;
 }
+.btn_white:hover {
+    box-shadow: 3px 3px rgb(215, 205, 215), -1em 0 .4em rgb(229, 229, 225);
+}
+
+.btn_white:hover::before {
+    opacity: 0.5;
+}
+
 
 /*form*/
 .form {
@@ -833,4 +859,7 @@ footer {
     text-align: center;
     font-size: 12px;;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
