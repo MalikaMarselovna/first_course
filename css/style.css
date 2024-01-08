@@ -415,7 +415,6 @@ textarea {
     background-image: url(/img/icon-heading.png);
     animation: zoomInOut 5s infinite;
 }
-
 @keyframes zoomInOut {
 
     0%,
