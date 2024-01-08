@@ -160,10 +160,7 @@ textarea {
 .menu__box li a:hover {
     color: #7C6AFA;
     border-bottom: solid 2px #7C6AFA;
-
-
 }
-
 .btn {
     display: inline-flex;
     padding: 10px 20px;
