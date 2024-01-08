@@ -13,6 +13,32 @@
     .container {
         max-width: 750px;
     }
+    .mentors {
+        padding: 155px 0;
+    }
+    
+    .ment {
+        margin-bottom: 85px;
+    }
+    
+    .ment_tit {
+        margin-bottom: 10px;
+    }
+    
+    .ment_txt {
+        margin-bottom: 20px;
+    }
+    
+    .mentor_card {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+    .btn_white {
+        background: none;
+        border: 1px solid #fff;
+        margin-left: 0px;
+    }
     .partners__items {
         -ms-grid-rows: (146px)[];
         grid-template-rows: repeat(3, 146px);
