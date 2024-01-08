@@ -156,7 +156,6 @@ textarea {
     cursor: pointer;
     transition: 1s;
 }
-
 .menu__box li a:hover {
     color: #7C6AFA;
     border-bottom: solid 2px #7C6AFA;
