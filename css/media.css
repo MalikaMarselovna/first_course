@@ -467,6 +467,47 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+}
+@media screen and (max-width: 1050px) {
+    .order-course__wrapper {
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
 
+    .order-course__earned {
+        width: 100%;
+        height: 75px;
+        margin-top: 20px
+    }
 
+    .order-course__earned::after,.order-course__earned::before {
+        top: 45px
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .order-course__wrapper {
+        -webkit-box-orient:vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start
+    }
+
+    .order-course__earned {
+        margin-top: 10px
+    }
+
+    .order-course__btn {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-top: 20px
+    }
 }

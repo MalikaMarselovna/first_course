@@ -4,23 +4,27 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
+
 :active,
 :focus,
 a:active,
 a:focus {
     outline: 0
 }
+
 a,
 a:hover,
 a:visited {
     text-decoration: none
 }
+
 aside,
 footer,
 header,
 nav {
     display: block
 }
+
 html,
 body {
     height: 100%;
@@ -34,37 +38,45 @@ body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .clearfix::after {
     clear: both;
     content: "";
     display: table;
 }
+
 a {
     color: inherit;
     text-decoration: none;
 }
+
 li {
     list-style: none;
 }
+
 ul li:last-child {
     margin-bottom: 0;
 }
+
 img {
     display: block;
     width: 100%;
     height: auto;
     overflow: hidden;
 }
+
 button,
 label,
 a {
     cursor: pointer;
 }
+
 input,
 button,
 textarea {
@@ -77,18 +89,22 @@ textarea {
     font-size: inherit;
     font-weight: inherit;
 }
+
 input[type="radio"],
 input[type="checkbox"] {
     display: none;
 }
+
 input::placeholder {
     color: inherit;
 }
+
 input,
 textarea {
     display: block;
     resize: none;
 }
+
 .container {
     max-width: 1330px;
     width: 100%;
@@ -96,26 +112,31 @@ textarea {
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .dn {
     display: none;
 }
+
 .flex {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .logo {
     width: 30px;
     height: 30px;
 }
+
 .head {
     margin-top: 10px;
     align-items: center;
     width: 100%;
-    background-color:rgba(18,18,18,.8);
+    background-color: none;
     position: relative;
     z-index: 99 !important;
 }
+
 .menu__box {
     padding: 20px 0;
     display: inline-flex;
@@ -125,6 +146,7 @@ textarea {
     margin: 0 176px 0 300px;
 
 }
+
 .menu__box li a {
     color: var(--white, #fff);
     text-align: center;
@@ -134,13 +156,15 @@ textarea {
     cursor: pointer;
     transition: 1s;
 }
+
 .menu__box li a:hover {
     color: #7C6AFA;
     border-bottom: solid 2px #7C6AFA;
 }
+
 .btn {
     display: inline-flex;
-    padding: 10px 20px;
+    padding: 10px 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -153,13 +177,17 @@ textarea {
     line-height: 100%;
     cursor: pointer;
     transition: 1s;
+    width: 130px;
 }
+
 .btn:hover {
     box-shadow: 3px 3px rgb(215, 205, 215), -1em 0 .4em rgb(229, 229, 225);
 }
+
 .btn:hover::before {
     opacity: 0.5;
 }
+
 .main {
     margin-top: -70px;
     background: url(/img/main.jpg);
@@ -169,9 +197,11 @@ textarea {
     width: 100%;
     height: 100%;
 }
+
 .main_in {
     width: 60%;
 }
+
 .main_tit {
     margin-top: 200px;
     color: var(--white, #fff);
@@ -180,9 +210,11 @@ textarea {
     line-height: 140%;
     margin-left: 120px;
 }
+
 .main_cards {
     gap: 30px;
 }
+
 .main_card {
     display: inline-flex;
     padding: 14px 23px;
@@ -192,6 +224,7 @@ textarea {
     background: #121212;
     margin-top: 38px;
 }
+
 #days,
 #hours,
 #minutes,
@@ -201,6 +234,7 @@ textarea {
     font-weight: 700;
     line-height: 140%;
 }
+
 .main_txt {
     color: var(--white, #FFF);
     text-align: center;
@@ -210,89 +244,10 @@ textarea {
 }
 
 /*course*/
-
-.order-course {
-    width: 100%;
-    color: rgba(255, 255, 255, .4);
-    background-color: #121212;
-    display: inline-flex;
-
-}
 .btn_red {
-    background: var(--grad1, linear-gradient(95deg, #DF5950 11.19%, #451046 93.72%));
-    width: 122px;
-    margin-top: 60px;
-
-}
-.students {
-    color: var(--white, #FFF);
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 150%;
-    opacity: 0.4;
-    padding: 5px 15px 5px 0
-}
-.students_num {
-    color: var(--white, #FFF);
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 150%;
-    padding: 5px 0 5px 15px
-}
-.order-course__earned {
-    position: relative;
-    z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 40%;
-}
-.order-course__earned-progress-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-.order-course__earned::after {
-    position: absolute;
-    top: 32px;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 5px;
-    content: "";
-    background-color: #fff
-}
-.order-course__earned::before {
-    position: absolute;
-    top: 32px;
-    left: 0;
-    z-index: 3;
-    width: 62%;
-    height: 5px;
-    content: "";
     background: -o-linear-gradient(355.22deg, #df5950 11.19%, #451046 93.72%);
-    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%)
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
 }
-.order-course__students-table {
-    margin: 0 auto;
-}
-
 /*about*/
 
 .about_left {
@@ -302,14 +257,17 @@ textarea {
     height: 359px;
     border: 23px solid var(--grad2, #C89AFC);
 }
+
 .about_left img {
     padding: 46px 10px 0;
 }
+
 .about_right {
     width: 50%;
     margin-top: 196px;
     padding-left: 100px;
 }
+
 .about_tit {
     color: var(--white, #FFF);
     font-size: 35px;
@@ -317,6 +275,7 @@ textarea {
     line-height: 140%;
     margin-bottom: 30px;
 }
+
 .about_txt {
     max-width: 636px;
     color: var(--white, #FFF);
@@ -330,19 +289,23 @@ textarea {
 .start {
     margin-top: 205px;
 }
+
 .start_main {
     margin-left: 160px;
 }
+
 .start_logo__tit {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
+
 .logo2 {
     width: 90px;
     height: 90px;
     margin-top: -30px;
 }
+
 .start_tit {
     padding-left: 110px;
     color: var(--white, #FFF);
@@ -352,6 +315,7 @@ textarea {
     margin-bottom: 37px;
     position: relative;
 }
+
 .start_tit::before {
     margin-top: -40px;
     position: absolute;
@@ -362,6 +326,7 @@ textarea {
     background-image: url(/img/icon-heading.png);
     animation: zoomInOut 5s infinite;
 }
+
 @keyframes zoomInOut {
 
     0%,
@@ -375,6 +340,7 @@ textarea {
         transform: scale(0.8);
     }
 }
+
 .start_txt {
     padding-left: 15px;
     max-width: 350px;
@@ -384,9 +350,11 @@ textarea {
     line-height: 160%;
     opacity: 0.5;
 }
+
 .start_cards {
     margin-top: 60px;
 }
+
 .sc_tit {
     color: var(--white, #FFF);
     font-size: 26px;
@@ -394,6 +362,7 @@ textarea {
     line-height: 140%;
     margin-bottom: 15px;
 }
+
 .sc_txt {
     width: 206px;
     color: var(--white, #FFF);
@@ -402,21 +371,26 @@ textarea {
     line-height: 160%;
     opacity: 0.5;
 }
+
 .sc_graph {
     width: 235px;
     background: var(--grad2, linear-gradient(94deg, #C89AFC 9.51%, #7C6AFA 90.23%));
     margin-bottom: 30px;
 
 }
+
 .sc_graph1 {
     height: 58px;
 }
+
 .sc_graph2 {
     height: 38px;
 }
+
 .sc_graph3 {
     height: 18px;
 }
+
 .sc_graph4 {
     height: 8px;
 }
@@ -426,6 +400,7 @@ textarea {
 .advantages {
     margin-top: 135px;
 }
+
 .advan_tit {
     color: var(--white, #FFF);
     font-size: 35px;
@@ -435,9 +410,11 @@ textarea {
     text-align: center;
     margin-bottom: 80px;
 }
+
 .advan_card {
     margin-left: 42px;
 }
+
 .advan_card__tit {
     max-width: 250px;
     color: var(--white, #FFF);
@@ -447,6 +424,7 @@ textarea {
     line-height: 140%;
     margin-bottom: 20px;
 }
+
 .advan_card__txt {
     max-width: 268px;
     color: rgba(255, 255, 255, .5);
@@ -455,6 +433,7 @@ textarea {
     font-weight: 400;
     line-height: 160%;
 }
+
 .advan_icon {
     width: 75px;
     height: 75px;
@@ -463,6 +442,7 @@ textarea {
     margin-left: 90px;
     margin-top: 10px;
 }
+
 .icon1 {
     background-image: url(/img/advan1.png);
 }
@@ -480,9 +460,11 @@ textarea {
 .partners {
     padding: 165px 0;
 }
+
 .part {
     margin-bottom: 55px;
 }
+
 .partners__items {
     margin-left: 160px;
     margin-right: 160px;
@@ -494,6 +476,7 @@ textarea {
     grid-template-columns: repeat(4, 5fr);
     overflow: hidden
 }
+
 .partners__item {
     width: 102%;
     height: 130px;
@@ -521,6 +504,7 @@ textarea {
     animation: zoomIn 5s infinite;
 
 }
+
 @keyframes zoomIn {
 
     0%,
@@ -534,6 +518,7 @@ textarea {
         transform: scale(0.8);
     }
 }
+
 .prog_tit {
     position: relative;
     color: var(--white, #FFF);
@@ -545,6 +530,7 @@ textarea {
     margin-bottom: 20px;
     margin-top: 75px;
 }
+
 .prog_txt {
     text-align: center;
     color: var(--white, #FFF);
@@ -553,6 +539,7 @@ textarea {
     line-height: 160%;
     opacity: 0.5;
 }
+
 .program_weeks {
     position: relative;
     z-index: 1;
@@ -567,6 +554,7 @@ textarea {
     padding: 10px 0;
     margin-top: 60px;
 }
+
 .program_weeks::before {
     position: absolute;
     top: 0;
@@ -578,6 +566,7 @@ textarea {
     background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
     background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%)
 }
+
 .program_week {
     position: relative;
     z-index: 1;
@@ -590,6 +579,7 @@ textarea {
     flex-direction: column;
     width: 50%
 }
+
 .program_week:nth-child(odd) {
     -webkit-box-align: end;
     -ms-flex-align: end;
@@ -597,6 +587,7 @@ textarea {
     padding-right: 60px;
     text-align: right
 }
+
 .program_week:nth-child(odd)::after {
     position: absolute;
     top: 50%;
@@ -608,6 +599,7 @@ textarea {
     content: "";
     background-color: #fff
 }
+
 .program_week:nth-child(even) {
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -615,6 +607,7 @@ textarea {
     padding-left: 60px;
     margin-left: auto
 }
+
 .program_week:nth-child(even)::before {
     position: absolute;
     top: 50%;
@@ -626,12 +619,14 @@ textarea {
     content: "";
     background-color: #fff
 }
+
 .program_week-tit {
     margin-bottom: 15px;
     font-size: 10px;
     line-height: 160%;
     color: rgba(255, 255, 255, .5)
 }
+
 .program_week-description {
     color: var(--white, #FFF);
     font-size: 12px;
@@ -644,19 +639,24 @@ textarea {
 .mentors {
     padding: 155px 0;
 }
+
 .ment {
     margin-bottom: 85px;
 }
+
 .ment_tit {
     margin-bottom: 10px;
 }
+
 .ment_txt {
     margin-bottom: 20px;
 }
+
 .mentor_card {
     margin-left: 75px;
     margin-right: 75px;
 }
+
 .mentor_icon {
     width: 140px;
     height: 140px;
@@ -664,15 +664,19 @@ textarea {
     background-size: cover;
     margin-bottom: 30px;
 }
+
 .micon1 {
     background-image: url(/img/mentor1.png);
 }
+
 .micon2 {
     background-image: url(/img/mentor2.png);
 }
+
 .micon3 {
     background-image: url(/img/mentor3.png);
 }
+
 .btn_white {
     background: none;
     border: 1px solid #fff;
@@ -683,12 +687,15 @@ textarea {
 .form {
     margin-top: -15px;
 }
+
 .form_tit {
     margin-bottom: 20px;
 }
+
 .form_txt {
     margin-bottom: 45px;
 }
+
 .subscribe_form {
     position: relative;
     display: -webkit-box;
@@ -697,6 +704,7 @@ textarea {
     width: 27.6%;
     margin-left: 470px;
 }
+
 .subscribe_email-input {
     height: 32px;
     padding: 10px 0 10px 20px;
@@ -705,6 +713,7 @@ textarea {
     border-radius: 50px;
     font-size: 12px;
 }
+
 .btn_red2 {
     position: absolute;
     top: 0;
@@ -737,9 +746,11 @@ textarea {
 footer {
     padding: 30px 0;
 }
+
 .footer_media-items {
     margin-bottom: 40px;
 }
+
 .footer_media-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -756,9 +767,11 @@ footer {
     background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
     border-radius: 100%;
 }
+
 .footer_media-item:not(:last-child) {
     margin-right: 20px;
 }
+
 .footer_media-link {
     display: inline-block;
     width: 17px;
@@ -767,18 +780,23 @@ footer {
     background-position: center;
     background-size: contain;
 }
+
 .vk {
     background-image: url(/img/vk.png);
 }
+
 .youtube {
     background-image: url(/img/youtube.png);
 }
+
 .facebook {
     background-image: url(/img/facebook.png);
 }
+
 .inst {
     background-image: url(/img/instagram.png);
 }
+
 .footer_template {
     color: rgba(255, 255, 255, .8);
     text-align: center;
