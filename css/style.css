@@ -674,7 +674,6 @@ textarea {
     padding-right: 60px;
     text-align: right
 }
-
 .program_week:nth-child(odd)::after {
     position: absolute;
     top: 50%;
