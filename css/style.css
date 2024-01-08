@@ -694,7 +694,6 @@ textarea {
     padding-left: 60px;
     margin-left: auto
 }
-
 .program_week:nth-child(even)::before {
     position: absolute;
     top: 50%;
