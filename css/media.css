@@ -188,6 +188,9 @@
     .start_main {
         margin-left: 0px;
     }
+    .subscribe_form {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 830px) {
@@ -213,10 +216,6 @@
         background-image: url(/img/icon-heading.png);
         animation: zoomInOut 5s infinite;
     }
-
-
-
-
 }
 
 @media screen and (max-width: 780px) {
@@ -247,8 +246,6 @@
     .btn {
         margin-left: 450px;
     }
-
-
 }
 
 @media screen and (max-width: 680px) {

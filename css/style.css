@@ -887,5 +887,6 @@ footer {
     font-size: 12px;
     font-weight: 400;
     line-height: 160%;
-    padding-left: 600px;
+    text-align: center;
+    padding-left: 30px;
 }
