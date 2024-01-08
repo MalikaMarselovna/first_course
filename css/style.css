@@ -184,7 +184,6 @@ textarea {
 .btn:hover {
     box-shadow: 3px 3px rgb(215, 205, 215), -1em 0 .4em rgb(229, 229, 225);
 }
-
 .btn:hover::before {
     opacity: 0.5;
 }
