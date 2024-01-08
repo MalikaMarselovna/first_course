@@ -321,7 +321,6 @@ textarea {
     content: "";
     background-color: #fff
 }
-
 .order-course__earned::before {
     position: absolute;
     top: 32px;
