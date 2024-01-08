@@ -129,7 +129,6 @@ textarea {
 }
 
 .head {
-    margin-top: 10px;
     align-items: center;
     width: 100%;
     background-color: none;
@@ -189,7 +188,7 @@ textarea {
 }
 
 .main {
-    margin-top: -70px;
+    margin-top: -60px;
     background: url(/img/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,8 +254,8 @@ textarea {
 }
 
 .order-course {
-    margin-top: -45px;
-    padding: 30px 200px;
+    margin-top: -65px;
+    padding: 18px 200px;
     background: #121212;
     width: 100%;
     -webkit-box-orient: vertical;
@@ -267,21 +266,25 @@ textarea {
     -ms-flex-align: start;
     align-items: flex-start
 }
-
 .student-infos {
-    direction: column;
+    margin-left: 182px;
+    margin-top: -30px;
 }
-
 .student-info {
-    display: inline-flex;
+    max-width: 183px;
+}
+.student-info2 {
+    max-width: 200px;
 }
 .student_num {
+    margin-top: -23px;
     color: var(--white, #FFF);
     font-size: 11px;
     font-weight: 700;
-    line-height: 150%;
+    line-height: 230%;
+    display: flex;
+    justify-content: end;
 }
-
 .student_txt,
 .order-course_money {
     color: rgba(255, 255, 255, .5);
@@ -290,7 +293,47 @@ textarea {
     line-height: 150%;
     opacity: 0.4;
 }
+.order-course_earned {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    height: 55px;
+    margin-left: 425px;
+    margin-top: -40px;
+}
+.order-course_earned-progress-bar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 
+.order-course_earned::after {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 4px;
+    content: "";
+    background-color: #fff;
+    margin-top: -8px;
+}
+
+.order-course_earned::before {
+    margin-top: -8px;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    z-index: 3;
+    width: 60%;
+    height: 4px;
+    content: "";
+    background: -o-linear-gradient(355.22deg, #df5950 11.19%, #451046 93.72%);
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%)
+}
 
 /*about*/
 
@@ -395,54 +438,76 @@ textarea {
     opacity: 0.5;
 }
 
-.start_cards {
-    margin-top: 60px;
+.start_chart {
+    display: flex;
+    padding: 55px 170px;
+    
 }
 
-.sc_tit {
+.start_chart-item {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.start_chart__tit {
+    margin-bottom: 5px;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 140%; 
     color: var(--white, #FFF);
-    font-size: 26px;
     font-weight: 700;
     line-height: 140%;
-    margin-bottom: 15px;
 }
 
-.sc_txt {
-    width: 206px;
+.chart{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px
+}
+.chart::after {
+    display: block;
+    width: 100%;
+    content: "";
+    background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%)
+
+}
+.start_chart-item:nth-child(1) .chart::after {
+    height: 75%;
+    content: "";
+  }
+
+.start_chart-item:nth-child(2) .chart::after {
+    height: 55%;
+}
+
+.start_chart-item:nth-child(3) .chart::after {
+    height: 25%;
+}
+
+.start_chart-item:nth-child(4) .chart::after{
+    height: 8px;
+}
+
+.chart_txt {
+    display: inline-block;
+    max-width: 95%;
+    width: 306px;
     color: var(--white, #FFF);
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 400;
     line-height: 160%;
     opacity: 0.5;
 }
 
-.sc_graph {
-    width: 235px;
-    background: var(--grad2, linear-gradient(94deg, #C89AFC 9.51%, #7C6AFA 90.23%));
-    margin-bottom: 30px;
-
-}
-
-.sc_graph1 {
-    height: 58px;
-}
-
-.sc_graph2 {
-    height: 38px;
-}
-
-.sc_graph3 {
-    height: 18px;
-}
-
-.sc_graph4 {
-    height: 8px;
-}
 
 /*advantages*/
 
 .advantages {
-    margin-top: 135px;
+    margin-top: 86px;
 }
 
 .advan_tit {
@@ -583,16 +648,10 @@ textarea {
     line-height: 160%;
     opacity: 0.5;
 }
-
 .program_weeks {
     position: relative;
     z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     padding: 10px 0;
@@ -614,19 +673,12 @@ textarea {
 .program_week {
     position: relative;
     z-index: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 50%
 }
 
 .program_week:nth-child(odd) {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
     align-items: flex-end;
     padding-right: 60px;
     text-align: right
@@ -645,8 +697,6 @@ textarea {
 }
 
 .program_week:nth-child(even) {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
     padding-left: 60px;
     margin-left: auto
@@ -764,8 +814,6 @@ textarea {
 
 .subscribe_form {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 27.6%;
     margin-left: 470px;
@@ -784,17 +832,9 @@ textarea {
     position: absolute;
     top: 0;
     right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    width: -webkit-max-content;
-    width: -moz-max-content;
     width: 120px;
     height: 100%;
     padding: 10px 30px;
@@ -818,14 +858,8 @@ footer {
 }
 
 .footer_media-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 35px;
     height: 35px;
@@ -867,7 +901,6 @@ footer {
     color: rgba(255, 255, 255, .8);
     text-align: center;
     font-size: 12px;
-    ;
     text-align: center;
     display: flex;
     justify-content: center;
