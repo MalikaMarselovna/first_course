@@ -855,7 +855,6 @@ footer {
 .footer_media-item:not(:last-child) {
     margin-right: 20px;
 }
-
 .footer_media-link {
     display: inline-block;
     width: 17px;
