@@ -209,6 +209,9 @@
     .container {
         max-width: 510px;
     }
+    .mentor_card{
+        margin-top: 50px;
+    }
 
     .btn {
         margin-left: 550px;
@@ -270,8 +273,7 @@
         margin-left: 20px;
     }
     .mentor_card {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
     }
 }
 
@@ -282,6 +284,13 @@
 
     .btn {
         margin-left: 450px;
+    }
+    .main_cards {
+        gap: 5px;
+        margin-left: 0px;
+    }
+    .main_in {
+        width: 100%;
     }
 
 }
@@ -294,11 +303,8 @@
     .btn {
         margin-left: 400px;
     }
-
-    .main_cards {
-        gap: 5px;
-        margin-left: 0px;
-    }
+ 
+  
 }
 
 @media screen and (max-width: 630px) {
@@ -309,12 +315,6 @@
     .btn {
         margin-left: 300px;
     }
-
-    .main_tit {
-        font-size: 34px;
-        margin-left: 10px;
-        margin-bottom: 30px;
-    }
 }
 
 @media screen and (max-width: 540px) {
@@ -324,6 +324,10 @@
 
     .btn {
         margin-left: 250px;
+    }
+    .main_tit {
+        font-size: 30px;
+        margin-left: 20px;
     }
 
     .main_card {
@@ -356,7 +360,7 @@
     }
 
     .main_tit {
-        margin-top: 100px;
+        margin-top: 300px;
     }
 
     .about_left {
@@ -373,6 +377,7 @@
         margin-top: 136px;
         padding-left: 0px;
     }
+
 }
 
 @media screen and (max-width: 380px) {
@@ -405,6 +410,10 @@
     .about_left {
         height: 300px;
 
+    }
+    .main_tit {
+        font-size: 28px;
+        margin-left: 20px;
     }
 }
 

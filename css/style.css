@@ -193,7 +193,7 @@ textarea {
     background: url(/img/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center right;
     width: 100%;
     height: 100%;
 }
@@ -213,6 +213,9 @@ textarea {
 
 .main_cards {
     gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .main_card {
@@ -255,8 +258,14 @@ textarea {
     margin-top: -45px;
     padding: 30px 200px;
     background: #121212;
-    display: inline-flex;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
 }
 
 .student-infos {
@@ -266,7 +275,6 @@ textarea {
 .student-info {
     display: inline-flex;
 }
-
 .student_num {
     color: var(--white, #FFF);
     font-size: 11px;
@@ -274,7 +282,8 @@ textarea {
     line-height: 150%;
 }
 
-.student_txt {
+.student_txt,
+.order-course_money {
     color: rgba(255, 255, 255, .5);
     font-size: 12px;
     font-weight: 400;
@@ -672,7 +681,7 @@ textarea {
 /*mentors*/
 
 .mentors {
-    padding: 105px 0;
+    padding: 155px 0;
 }
 
 .ment {
@@ -692,7 +701,6 @@ textarea {
 .mentor_card {
     margin-left: 75px;
     margin-right: 75px;
-    margin-top: 50px;
 }
 
 .mentor_icon {
@@ -731,6 +739,7 @@ textarea {
     width: 132px;
     margin-left: 30px;
 }
+
 .btn_white:hover {
     box-shadow: 3px 3px rgb(215, 205, 215), -1em 0 .4em rgb(229, 229, 225);
 }
@@ -857,7 +866,8 @@ footer {
 .footer_template {
     color: rgba(255, 255, 255, .8);
     text-align: center;
-    font-size: 12px;;
+    font-size: 12px;
+    ;
     text-align: center;
     display: flex;
     justify-content: center;
