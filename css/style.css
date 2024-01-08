@@ -248,6 +248,9 @@ textarea {
     background: -o-linear-gradient(355.22deg, #df5950 11.19%, #451046 93.72%);
     background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
 }
+.order-course {
+    padding: 43px 190px;
+}
 /*about*/
 
 .about_left {
