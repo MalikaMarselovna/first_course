@@ -113,17 +113,6 @@ textarea {
     padding: 0 15px;
 
 }
-section{
-    transform: translateX(400%);
-    transition: transform 0.8s ease;
-}
-section:nth-of-type(even){
-    transform: translateX(-400%);
-}
-section.show{
-    transform: translateX(0);
-}
-
 .dn {
     display: none;
 }
