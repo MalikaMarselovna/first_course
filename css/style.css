@@ -111,6 +111,17 @@ textarea {
     min-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
+
+}
+section{
+    transform: translateX(400%);
+    transition: transform 0.8s ease;
+}
+section:nth-of-type(even){
+    transform: translateX(-400%);
+}
+section.show{
+    transform: translateX(0);
 }
 
 .dn {
@@ -126,7 +137,9 @@ textarea {
 .logo {
     width: 30px;
     height: 30px;
+    animation: zoomInOut 5s infinite;
 }
+
 
 .head {
     align-items: center;
@@ -154,6 +167,7 @@ textarea {
     line-height: 150%;
     cursor: pointer;
     transition: 1s;
+    padding-bottom: 5px;
 }
 
 .menu__box li a:hover {
@@ -179,11 +193,17 @@ textarea {
     width: 130px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn_red:hover,
+.btn_white:hover,
+.btn_red2:hover {
     box-shadow: 3px 3px rgb(215, 205, 215), -1em 0 .4em rgb(229, 229, 225);
 }
 
-.btn:hover::before {
+.btn:hover::before,
+.btn_red:hover::before,
+.btn_white:hover::before,
+.btn_red2:hover::before {
     opacity: 0.5;
 }
 
@@ -212,8 +232,6 @@ textarea {
 
 .main_cards {
     gap: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex
 }
 
@@ -225,6 +243,12 @@ textarea {
     align-items: center;
     background: #121212;
     margin-top: 38px;
+    transition: 1s;
+    border-radius: 5px;
+}
+.main_card:hover{
+    box-shadow: 0 0 8px rgb(207, 207, 207);
+    
 }
 
 #days,
@@ -248,9 +272,18 @@ textarea {
 /*course*/
 
 .btn_red {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #fff;
     background: -o-linear-gradient(355.22deg, #df5950 11.19%, #451046 93.72%);
     background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
-    width: 125px;
+    border-radius: 50px;
+    width: 130px;
+    transition: 1s;
 }
 
 .order-course {
@@ -258,24 +291,23 @@ textarea {
     padding: 18px 200px;
     background: #121212;
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start
 }
+
 .student-infos {
     margin-left: 182px;
     margin-top: -30px;
 }
+
 .student-info {
     max-width: 183px;
 }
+
 .student-info2 {
     max-width: 200px;
 }
+
 .student_num {
     margin-top: -23px;
     color: var(--white, #FFF);
@@ -285,14 +317,16 @@ textarea {
     display: flex;
     justify-content: end;
 }
+
 .student_txt,
 .order-course_money {
-    color: rgba(255, 255, 255, .5);
+    color:var(--white, #FFF);
     font-size: 12px;
     font-weight: 400;
     line-height: 150%;
     opacity: 0.4;
 }
+
 .order-course_earned {
     position: relative;
     z-index: 1;
@@ -304,6 +338,7 @@ textarea {
     margin-left: 425px;
     margin-top: -40px;
 }
+
 .order-course_earned-progress-bar {
     display: flex;
     align-items: flex-end;
@@ -343,6 +378,7 @@ textarea {
     width: 386px;
     height: 359px;
     border: 23px solid var(--grad2, #C89AFC);
+    box-shadow: 0 0 8px rgb(207, 207, 207);
 }
 
 .about_left img {
@@ -418,8 +454,6 @@ textarea {
 
     0%,
     100% {
-        -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
         transform: rotate(180deg)
     }
 
@@ -441,7 +475,7 @@ textarea {
 .start_chart {
     display: flex;
     padding: 55px 170px;
-    
+
 }
 
 .start_chart-item {
@@ -454,31 +488,32 @@ textarea {
     margin-bottom: 5px;
     font-size: 27px;
     font-weight: 700;
-    line-height: 140%; 
+    line-height: 140%;
     color: var(--white, #FFF);
     font-weight: 700;
     line-height: 140%;
 }
 
-.chart{
+.chart {
     display: flex;
     align-items: center;
     width: 100%;
     height: 80px;
     margin-bottom: 10px
 }
+
 .chart::after {
     display: block;
     width: 100%;
     content: "";
     background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
     background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%)
-
 }
+
 .start_chart-item:nth-child(1) .chart::after {
     height: 75%;
     content: "";
-  }
+}
 
 .start_chart-item:nth-child(2) .chart::after {
     height: 55%;
@@ -488,7 +523,7 @@ textarea {
     height: 25%;
 }
 
-.start_chart-item:nth-child(4) .chart::after{
+.start_chart-item:nth-child(4) .chart::after {
     height: 8px;
 }
 
@@ -522,6 +557,14 @@ textarea {
 
 .advan_card {
     margin-left: 42px;
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 1s;
+}
+.advan_card:hover{
+    box-shadow: 0 0 8px rgb(207, 207, 207);
+
 }
 
 .advan_card__tit {
@@ -577,7 +620,6 @@ textarea {
 .partners__items {
     margin-left: 160px;
     margin-right: 160px;
-    display: -ms-grid;
     display: grid;
     -ms-grid-rows: (126px)[];
     grid-template-rows: repeat(2, 126px);
@@ -611,15 +653,12 @@ textarea {
     content: "";
     background-image: url(/img/icon-heading.png);
     animation: zoomIn 5s infinite;
-
 }
 
 @keyframes zoomIn {
 
     0%,
     100% {
-        -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
         transform: rotate(-45deg)
     }
 
@@ -648,6 +687,7 @@ textarea {
     line-height: 160%;
     opacity: 0.5;
 }
+
 .program_weeks {
     position: relative;
     z-index: 1;
@@ -787,17 +827,8 @@ textarea {
     cursor: pointer;
     transition: 1s;
     width: 132px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
-
-.btn_white:hover {
-    box-shadow: 3px 3px rgb(215, 205, 215), -1em 0 .4em rgb(229, 229, 225);
-}
-
-.btn_white:hover::before {
-    opacity: 0.5;
-}
-
 
 /*form*/
 .form {

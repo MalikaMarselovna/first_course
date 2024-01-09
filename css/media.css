@@ -8,8 +8,8 @@
 
     }
     .subscribe_form {
-        width: 30.6%;
-        margin-left: 320px;
+        width: 35%;
+        margin-left: 300px;
     }
     .btn_red{
         margin: 5px;
@@ -18,11 +18,30 @@
         margin-left: 45px;
         margin-right: 45px;
     }
+    .order-course {
+        padding: 18px 140px;
+    }
+    .start_chart {
+        display: flex;
+        padding: 55px 100px;
+    
+    }
 }
 
 @media screen and (max-width: 990px) {
     .container {
         max-width: 750px;
+    }
+    .order-course {
+        padding: 18px 0px;
+    }
+    .head{
+        padding: 10px 0px;
+    }
+    .start_chart {
+        display: flex;
+        padding: 55px 30px;
+    
     }
 
     .mentor_card {
@@ -81,26 +100,20 @@
         position: fixed;
         top: 20px;
         left: 20px;
-
         width: 26px;
         height: 26px;
-
         cursor: pointer;
         z-index: 1;
         margin-top: -5px;
     }
-
     .menu__btn>span,
     .menu__btn>span::before,
     .menu__btn>span::after {
         display: block;
         position: absolute;
-
         width: 100%;
         height: 2px;
-
         background-color: #fff;
-
         transition-duration: .25s;
     }
 
@@ -120,32 +133,23 @@
         visibility: hidden;
         top: 0;
         left: -100%;
-
         width: 100%;
         margin: 0;
         padding: 80px 0;
-
         list-style: none;
-
         background: rgba(18, 18, 18, .8);
-
         text-shadow: 1px 1px 1px #2e2d2d;
-
         transition-duration: .25s;
     }
 
     .menu__item {
         display: block;
         padding: 12px 24px;
-
         color: #222020;
-
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 600;
-
         text-decoration: none;
-
         transition-duration: .25s;
     }
 
@@ -179,6 +183,11 @@
         width: 40.6%;
         margin-left: 200px;
     }
+    .order-course_earned {
+        width: 53%;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
 
 }
 
@@ -203,6 +212,76 @@
         margin-left: 15px;
         margin-right: 15px;
     }
+    .subscribe_form {
+        width: 50.6%;
+        margin-left: 150px;
+    }
+    .start_chart {
+        display: flex;
+        padding: 55px 10px;
+    }
+    .order-course_earned {
+        width: 70%;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+}
+@media screen and (max-width: 850px) {
+    .start_chart {
+        position:relative;
+        flex-direction: column
+    }
+
+    .start_chart-item {
+        position: relative;
+        width: 100%;
+        padding-left: 30%
+    }
+
+    .chart {
+        position: absolute;
+        left: 0;
+        width: 25%;
+        height: 100%;
+    }
+
+    .start_chart-item-item:nth-child(1) .chart::after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+    }
+
+    .start_chart-item:nth-child(2) .chart::after {
+        position: absolute;
+        right: auto;
+        left: 12.5%;
+        width: 75%;
+        height: 100%;
+    }
+
+    .start_chart-item:nth-child(3) .chart::after {
+        position: absolute;
+        right: auto;
+        left: 25%;
+        width: 50%;
+        height: 100%;
+    }
+
+    .start_chart-item:nth-child(4) .chart::after {
+        position: absolute;
+        right: auto;
+        left: calc(50% - 5px);
+        width: 10px;
+        height: 100%;
+    }
+    .order-course_earned {
+        width: 76%;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
 }
 
 @media screen and (max-width: 830px) {
@@ -220,33 +299,18 @@
     .start_tit {
         padding-left: 10px;
     }
-
     .start_tit::before {
         margin-top: -40px;
         position: absolute;
-        left: -100px;
-        width: 127px;
-        height: 127px;
+        left: -115px;
+        width: 115px;
+        height: 115px;
         content: "";
-        background-image: url(/img/icon-heading.png);
-        animation: zoomInOut 5s infinite;
+
     }
     .subscribe_form {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
         width: 60.6%;
-        margin-left: 80px;
-    }
-
-    .subscribe_email-input {
-        height: 32px;
-        padding: 10px 0 10px 20px;
-        color: #fff;
-        background-color: rgba(255, 255, 255, .25);
-        border-radius: 50px;
-        font-size: 12px;
+        margin-left: 100px;
     }
     .mentor_card {
         margin-left: 10px;
@@ -273,7 +337,7 @@
         margin-left: 20px;
     }
     .mentor_card {
-        margin-left: 20px;
+        margin-left: 15px;
     }
 }
 
@@ -292,7 +356,6 @@
     .main_in {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 680px) {
@@ -303,8 +366,24 @@
     .btn {
         margin-left: 400px;
     }
- 
-  
+    .subscribe_form {
+        width: 80%;
+        margin-left: 40px;
+    }
+    .order-course_earned {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+
+    .partners__items {
+        -ms-grid-rows: (146px)[];
+        grid-template-rows: repeat(3, 146px);
+        -ms-grid-columns: (1fr)[];
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 630px) {
@@ -319,19 +398,17 @@
 @media screen and (max-width: 550px) {
     .start_chart__tit {
         margin-bottom:15px;
-        margin-left: 85px;
+        margin-left: 0px;
         font-size: 28px;
         line-height: 75px
     }
 
     .start_chart__tit::before {
-        left: -85px;
+        left: 0px;
         width: 75px;
-        height: 75px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain
     }
+    
+
 }
 
 @media screen and (max-width: 540px) {
@@ -365,6 +442,13 @@
     .advan_card {
         margin-left: 0px;
     }
+    .student-info {
+        max-width: 95%;
+    }
+    
+    .student-info2 {
+        max-width: 95%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -377,7 +461,7 @@
     }
 
     .main_tit {
-        margin-top: 300px;
+        margin-top: 200px;
     }
 
     .about_left {
@@ -393,6 +477,14 @@
         width: 100%;
         margin-top: 136px;
         padding-left: 0px;
+    }
+    .subscribe_form {
+        width: 80%;
+        margin-left: 50px;
+    }
+    .student-infos {
+        margin-left: 0px;
+        margin-top: 15px;
     }
 
 }
@@ -415,6 +507,10 @@
     .about_left {
         height: 320px;
 
+    }
+    .subscribe_form {
+        width: 90%;
+        margin-left: 10px;
     }
 
 }
@@ -442,6 +538,7 @@
     .btn {
         margin-left: 50px;
     }
+   
 }
 
 @media screen and (max-width: 300px) {
@@ -452,6 +549,7 @@
     .btn {
         margin-left: 0px;
     }
+    
 }
 
 @media screen and (max-width: 280px) {
@@ -468,34 +566,3 @@
 
 }
 
-@media screen and (max-width: 1000px) {
-    .partners {
-        padding: 50px 0
-    }
-
-    .partners__title {
-        padding-bottom: 50px;
-        padding-left: 80px;
-        font-size: 38px;
-        line-height: 80px;
-        background-size: 80px
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .partners__title {
-        padding-left: 40px;
-        font-size: 32px;
-        line-height: 40px;
-        background-size: 40px
-    }
-
-    .partners__items {
-        -ms-grid-rows: (146px)[];
-        grid-template-rows: repeat(3, 146px);
-        -ms-grid-columns: (1fr)[];
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-}
