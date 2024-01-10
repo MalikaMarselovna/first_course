@@ -137,10 +137,6 @@ textarea {
     animation: load 1s infinite ease-in-out;
     transform: translateZ(0);
 }
-таблица стилей агента пользователя
-div {
-    display: block;
-}
 .loader:before {
     left: -1.5em;
 }
