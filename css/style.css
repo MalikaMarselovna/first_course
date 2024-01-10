@@ -780,15 +780,20 @@ textarea {
 .mentor_card {
     margin-left: 75px;
     margin-right: 75px;
+    transition: 2s;
 }
+.mentor_card:hover{
+    transform: scale(1.2); /* Увеличиваем масштаб */
 
+}
 .mentor_icon {
     width: 140px;
     height: 140px;
     border-radius: 190px;
     background-size: cover;
     margin-bottom: 30px;
-    margin-left: 10px;
+    margin-right: 3px;
+
 }
 
 .micon1 {
