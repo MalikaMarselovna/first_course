@@ -101,9 +101,11 @@ textarea {
     display: block;
     resize: none;
 }
-.body{
+
+.body {
     display: none;
 }
+
 .container {
     max-width: 1330px;
     width: 100%;
@@ -122,11 +124,25 @@ textarea {
     justify-content: center;
     flex-wrap: wrap;
 }
-.loader-full{
+
+section,
+footer,
+header {
+    display: none;
+}
+
+.loader-full {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .loader-container {
     display: flex;
     justify-content: center;
@@ -226,6 +242,7 @@ textarea {
     animation: zoomInOut 5s infinite;
 }
 
+/**header**/
 
 .head {
     align-items: center;
