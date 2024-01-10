@@ -29,7 +29,7 @@ html,
 body {
     height: 100%;
     font-family: "Roboto";
-    background-image: url(img/bgc.png);
+    background-image: url(../img/bgc.png);
     width: 100%;
     height: 100%;
     font-size: 14px;
@@ -198,7 +198,7 @@ textarea {
 
 .main {
     margin-top: -60px;
-    background: url(img/main.jpg);
+    background: url(..img/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
@@ -435,7 +435,7 @@ textarea {
     width: 127px;
     height: 127px;
     content: "";
-    background-image: url(img/icon-heading.png);
+    background-image: url(../img/icon-heading.png);
     animation: zoomInOut 5s infinite;
 }
 
@@ -585,15 +585,15 @@ textarea {
 }
 
 .icon1 {
-    background-image: url(img/advan1.png);
+    background-image: url(../img/advan1.png);
 }
 
 .icon2 {
-    background-image: url(img/advan2.png);
+    background-image: url(../img/advan2.png);
 }
 
 .icon3 {
-    background-image: url(img/advan3.png);
+    background-image: url(../img/advan3.png);
 }
 
 /*partners*/
@@ -620,7 +620,7 @@ textarea {
 .partners__item {
     width: 102%;
     height: 130px;
-    background-image: url(img/partners.png);
+    background-image: url(../img/partners.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
@@ -640,7 +640,7 @@ textarea {
     width: 127px;
     height: 127px;
     content: "";
-    background-image: url(img/icon-heading.png);
+    background-image: url(../img/icon-heading.png);
     animation: zoomIn 5s infinite;
 }
 
@@ -792,15 +792,15 @@ textarea {
 }
 
 .micon1 {
-    background-image: url(img/mentor1.png);
+    background-image: url(../img/mentor1.png);
 }
 
 .micon2 {
-    background-image: url(img/mentor2.png);
+    background-image: url(../img/mentor2.png);
 }
 
 .micon3 {
-    background-image: url(img/mentor3.png);
+    background-image: url(../img/mentor3.png);
 }
 
 .btn_white {
@@ -902,19 +902,19 @@ footer {
 }
 
 .vk {
-    background-image: url(img/vk.png);
-}
+    background-image: url(../img/vk.png);
+}.
 
 .youtube {
-    background-image: url(img/youtube.png);
+    background-image: url(../img/youtube.png);
 }
 
 .facebook {
-    background-image: url(img/facebook.png);
+    background-image: url(../img/facebook.png);
 }
 
 .inst {
-    background-image: url(img/instagram.png);
+    background-image: url(../img/instagram.png);
 }
 
 .footer_template {

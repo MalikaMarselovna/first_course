@@ -23,4 +23,5 @@ function updateCounter() {
     seconds.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
 }
 
+setInterval(updateCounter, 1000)
 updateCounter();
