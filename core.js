@@ -2,6 +2,11 @@ const days = document.querySelector('#days');
 const hours = document.querySelector('#hours');
 const minutes = document.querySelector('#minutes');
 const seconds = document.querySelector('#seconds');
+const loader = document.querySelector('#loader-full')
+const section = document.querySelector("section");
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
+
 
 const currentYear = new Date().getFullYear();
 const nextYear = new Date(`March 03 2024 00:00:00`);
@@ -39,3 +44,9 @@ for (let smoothLink of smoothLinks) {
     });
 };
 
+setTimeout(function (){
+    loader.remove();
+    section.style.display = 'flex';
+    header.style.display = 'flex';
+    footer.style.display = 'flex';
+}, 2000)
