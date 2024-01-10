@@ -113,6 +113,7 @@ textarea {
     padding: 0 15px;
 
 }
+
 .dn {
     display: none;
 }
@@ -121,6 +122,70 @@ textarea {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.loader {
+    position: relative;
+    -webkit-animation-delay: 0.16s;
+    animation-delay: 0.16s;
+}
+.loader:before, .loader:after, .loader {
+    width: 1em;
+    height: 4em;
+    background-color: currentColor;
+    color: #5b56d2;
+    -webkit-animation: load 1s infinite ease-in-out;
+    animation: load 1s infinite ease-in-out;
+    transform: translateZ(0);
+}
+таблица стилей агента пользователя
+div {
+    display: block;
+}
+.loader:before {
+    left: -1.5em;
+}
+.loader:before, .loader:after {
+    position: absolute;
+    top: 0;
+    content: "";
+}
+.loader:before, .loader:after, .loader {
+    width: 1em;
+    height: 4em;
+    background-color: currentColor;
+    color: #5b56d2;
+    -webkit-animation: load 1s infinite ease-in-out;
+    animation: load 1s infinite ease-in-out;
+    transform: translateZ(0);
+}
+.loader:after {
+    right: -1.5em;
+    -webkit-animation-delay: 0.32s;
+    animation-delay: 0.32s;
+}
+.loader:before, .loader:after {
+    position: absolute;
+    top: 0;
+    content: "";
+}
+.loader:before, .loader:after, .loader {
+    width: 1em;
+    height: 4em;
+    background-color: currentColor;
+    color: #5b56d2;
+    -webkit-animation: load 1s infinite ease-in-out;
+    animation: load 1s infinite ease-in-out;
+    transform: translateZ(0);
+}
+@keyframes load{
+0%, 80%, 100% {
+    height: 4em;
+    box-shadow: 0 0;
+}
+40% {
+    height: 5em;
+    box-shadow: 0 -1em;
+    color: #9c27b0;}
 }
 
 .logo {
@@ -195,6 +260,7 @@ textarea {
 .btn_red2:hover::before {
     opacity: 0.5;
 }
+
 .main {
 
     margin-top: -60px;
@@ -235,9 +301,10 @@ textarea {
     transition: 1s;
     border-radius: 5px;
 }
-.main_card:hover{
+
+.main_card:hover {
     box-shadow: 0 0 8px rgb(207, 207, 207);
-    
+
 }
 
 #days,
@@ -309,7 +376,7 @@ textarea {
 
 .student_txt,
 .order-course_money {
-    color:var(--white, #FFF);
+    color: var(--white, #FFF);
     font-size: 12px;
     font-weight: 400;
     line-height: 150%;
@@ -551,9 +618,9 @@ textarea {
     overflow: hidden;
     transition: 1s;
 }
-.advan_card:hover{
-    box-shadow: 0 0 8px rgb(207, 207, 207);
 
+.advan_card:hover {
+    transform: scale(1.1);
 }
 
 .advan_card__tit {
@@ -782,18 +849,19 @@ textarea {
     margin-right: 75px;
     transition: 2s;
 }
-.mentor_card:hover{
-    transform: scale(1.2); /* Увеличиваем масштаб */
 
+.mentor_card:hover {
+    transform: scale(1.2);
+    /* Увеличиваем масштаб */
 }
+
 .mentor_icon {
     width: 140px;
     height: 140px;
     border-radius: 190px;
     background-size: cover;
     margin-bottom: 30px;
-    margin-right: 3px;
-
+    margin-left: 10px;
 }
 
 .micon1 {
@@ -821,7 +889,7 @@ textarea {
     cursor: pointer;
     transition: 1s;
     width: 132px;
-    margin-left: 20px;
+    margin-left: 16px;
 }
 
 /*form*/
