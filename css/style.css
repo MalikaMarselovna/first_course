@@ -968,9 +968,29 @@ header,
     border-radius: 50px;
 }
 .go-back{
-    background-image: url();
+    background-image: url(../img/go-back.png);
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    animation: zoom 2s infinite ;    
+    position: absolute ;
 }
+@keyframes zoom {
 
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+}
 /*footer*/
 
 footer {
@@ -991,6 +1011,7 @@ footer {
     background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
     border-radius: 100%;
     transition: 1s;
+    
 }
 
 .footer_media-item:not(:last-child) {
