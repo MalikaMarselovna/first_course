@@ -409,6 +409,10 @@
     .advan_card {
         padding: 20px;
     }
+    .go-back{
+        margin-top: -350px;
+        right: 20px;
+    }
 
 }
 
