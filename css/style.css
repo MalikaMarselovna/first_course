@@ -128,7 +128,15 @@ textarea {
 /*preloader*/
 section,
 footer,
-header {
+header,
+.order-course,
+.about,
+.start,
+.advantages,
+.partners,
+.program,
+.mentors,
+.form {
     display: none;
 }
 
@@ -149,33 +157,31 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 13em;
-    height: 13em;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
-    border: 1px solid #5b56d2;
-    position: relative;;
-}
+    border: 2px solid #5b56d2 ;
 
+}
 .loader {
     position: relative;
-    -webkit-animation-delay: 0.16s;
     animation-delay: 0.16s;
 }
 
 .loader:before,
-.loader:after,
+.loader::after,
 .loader {
     width: 1em;
     height: 4em;
     background-color: currentColor;
     color: #5b56d2;
-    -webkit-animation: load 1s infinite ease-in-out;
     animation: load 1s infinite ease-in-out;
     transform: translateZ(0);
 }
 
 .loader:before {
     left: -1.5em;
+    animation-delay: 0.15s;
 }
 
 .loader:before,
@@ -183,43 +189,12 @@ header {
     position: absolute;
     top: 0;
     content: "";
-}
-
-.loader:before,
-.loader:after,
-.loader {
-    width: 1em;
-    height: 4em;
-    background-color: currentColor;
-    color: #5b56d2;
-    -webkit-animation: load 1s infinite ease-in-out;
-    animation: load 1s infinite ease-in-out;
-    transform: translateZ(0);
 }
 
 .loader:after {
     right: -1.5em;
     -webkit-animation-delay: 0.32s;
     animation-delay: 0.32s;
-}
-
-.loader:before,
-.loader:after {
-    position: absolute;
-    top: 0;
-    content: "";
-}
-
-.loader:before,
-.loader:after,
-.loader {
-    width: 1em;
-    height: 4em;
-    background-color: currentColor;
-    color: #5b56d2;
-    -webkit-animation: load 1s infinite ease-in-out;
-    animation: load 1s infinite ease-in-out;
-    transform: translateZ(0);
 }
 
 @keyframes load {

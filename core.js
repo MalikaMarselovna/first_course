@@ -6,6 +6,14 @@ const loader = document.querySelector('#loader-full')
 const section = document.querySelector("section");
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
+const order = document.querySelector('.order-course');
+const about = document.querySelector('.about');
+const start = document.querySelector('.start');
+const advantages = document.querySelector('.advantages');
+const partners = document.querySelector('.partners');
+const program = document.querySelector('.program');
+const mentors = document.querySelector('.mentors');
+const form = document.querySelector('.form');
 
 
 const currentYear = new Date().getFullYear();
@@ -49,4 +57,12 @@ setTimeout(function (){
     section.style.display = 'flex';
     header.style.display = 'flex';
     footer.style.display = 'flex';
+    order.style.display = 'flex';
+    about.style.display = 'flex';
+    start.style.display = 'flex';
+    advantages.style.display = 'flex';
+    partners.style.display = 'flex';
+    program.style.display = 'flex';
+    mentors.style.display = 'flex';
+    form.style.display = 'flex';
 }, 2000)
