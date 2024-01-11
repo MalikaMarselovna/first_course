@@ -184,11 +184,10 @@
         margin-left: 200px;
     }
     .order-course_earned {
-        width: 53%;
+        width: 93%;
         margin-left: 0px;
         margin-top: 15px;
     }
-
 }
 
 @media screen and (max-width: 930px) {
@@ -221,7 +220,7 @@
         padding: 55px 10px;
     }
     .order-course_earned {
-        width: 70%;
+        width: 90%;
         margin-left: 0px;
         margin-top: 15px;
     }

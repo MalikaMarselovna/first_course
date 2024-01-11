@@ -1,7 +1,6 @@
 *,
 ::after,
 ::before {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
 
@@ -127,7 +126,7 @@ textarea {
 
 /*preloader*/
 section,
-footer,
+
 header,
 .order-course,
 .about,
@@ -146,7 +145,7 @@ header,
     height: 100%;
     padding: 0;
     margin: 0;
-    background: #212121;
+    background: url(../img/bgc.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,6 +252,7 @@ header,
 .menu__box li a:hover {
     color: #7C6AFA;
     border-bottom: solid 2px #7C6AFA;
+    transition: 1s;
 }
 
 .btn {
@@ -881,7 +881,6 @@ header,
 
 .mentor_card:hover {
     transform: scale(1.2);
-    /* Увеличиваем масштаб */
 }
 
 .mentor_icon {
@@ -968,6 +967,9 @@ header,
     background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     border-radius: 50px;
 }
+.go-back{
+    background-image: url();
+}
 
 /*footer*/
 
@@ -988,6 +990,7 @@ footer {
     background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
     background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
     border-radius: 100%;
+    transition: 1s;
 }
 
 .footer_media-item:not(:last-child) {
@@ -1002,6 +1005,11 @@ footer {
     background-position: center;
     background-size: contain;
     text-align: center;
+    transition: 1s;
+}
+.footer_media-link:hover,
+.footer_media-item:hover{
+    transform: scale(1.2);
 }
 
 .vk {
@@ -1028,4 +1036,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }

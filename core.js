@@ -5,7 +5,7 @@ const seconds = document.querySelector('#seconds');
 const loader = document.querySelector('#loader-full')
 const section = document.querySelector("section");
 const header = document.querySelector("header");
-const footer = document.querySelector("footer");
+const footer = document.querySelector('#footer');
 const order = document.querySelector('.order-course');
 const about = document.querySelector('.about');
 const start = document.querySelector('.start');
@@ -56,7 +56,7 @@ setTimeout(function (){
     loader.remove();
     section.style.display = 'flex';
     header.style.display = 'flex';
-    footer.style.display = 'flex';
+    footer.style.display = ' ';
     order.style.display = 'flex';
     about.style.display = 'flex';
     start.style.display = 'flex';
