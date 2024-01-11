@@ -967,7 +967,7 @@ header,
     background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     border-radius: 50px;
 }
-.go-back{
+.go-back {
     background-image: url(../img/go-back.png);
     width: 70px;
     height: 70px;
@@ -975,11 +975,13 @@ header,
     background-position: center;
     background-size: contain;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-    animation: zoom 2s infinite ;    
-    position: absolute ;
+    animation: zoom 2s infinite;
+    position: absolute;
+    right: 50px; 
 }
+
 @keyframes zoom {
 
     0%,
